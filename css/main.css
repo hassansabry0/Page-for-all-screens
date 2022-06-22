@@ -1,0 +1,15 @@
+.arrow {
+  position: relative;
+  height: 3px;
+  background-color: rgb(207, 202, 202);
+}
+.arrow::after {
+  position: absolute;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(207, 202, 202);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -10px;
+}
